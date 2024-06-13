@@ -1,0 +1,94 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: relative;
+  border: solid 1px black;
+  background-color: #f4f1de;
+  color: #04395e;
+}
+html h2, body h2 {
+  position: absolute;
+  left: 25px;
+  top: -5px;
+}
+html .select1, body .select1 {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50px;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #dab785;
+  color: #04395e;
+  font-weight: 600;
+}
+html .select1:hover, body .select1:hover {
+  background-color: #d5896f;
+  transition: 1s;
+}
+html .select1:active, body .select1:active {
+  width: 220px;
+  height: 45px;
+  border-radius: 20px;
+  transition: 2s;
+}
+html .select2, body .select2 {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  left: 300px;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #dab785;
+  color: #04395e;
+  font-weight: 600;
+}
+html .select2:hover, body .select2:hover {
+  background-color: #70a288;
+  transition: 1s;
+}
+html .select2:active, body .select2:active {
+  width: 220px;
+  height: 45px;
+  border-radius: 20px;
+  transition: 2s;
+}
+html .select3, body .select3 {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  left: 550px;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #dab785;
+  color: #04395e;
+  font-weight: 600;
+}
+html .select3:hover, body .select3:hover {
+  background-color: #eae8ff;
+  transition: 1s;
+}
+html .select3:active, body .select3:active {
+  width: 220px;
+  height: 45px;
+  border-radius: 20px;
+  transition: 2s;
+}
+html .scene, body .scene {
+  position: absolute;
+  left: 20px;
+  top: 120px;
+}
