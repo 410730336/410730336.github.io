@@ -1,0 +1,256 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: relative;
+  border: solid 1px black;
+  background-color: #f4f1de;
+  color: #04395e;
+}
+html h2, body h2 {
+  position: absolute;
+  left: 25px;
+  top: -5px;
+}
+html .person1, body .person1 {
+  width: 250px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  background-color: #dab785;
+}
+html .person1 .hair, body .person1 .hair {
+  width: 150px;
+  height: 70px;
+  border-radius: 40px;
+  position: absolute;
+  left: 40;
+  top: -30px;
+  background-color: #04395e;
+}
+html .person1 .eyes, body .person1 .eyes {
+  position: absolute;
+  left: 40;
+  top: 30px;
+}
+html .person1 .eyes .RE, body .person1 .eyes .RE {
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 130px;
+  top: 60px;
+  background-color: #7a542e;
+}
+html .person1 .eyes .LE, body .person1 .eyes .LE {
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  background-color: #7a542e;
+}
+html .person1 .mouth, body .person1 .mouth {
+  width: 30px;
+  height: 20px;
+  border-radius: 15px;
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  background-color: #fbb034;
+}
+html .person1 h4, body .person1 h4 {
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  font-size: 28px;
+  opacity: 0;
+}
+html .person1:hover .eyes .RE, body .person1:hover .eyes .RE {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 130px;
+  top: 40px;
+  transition: 0.5s;
+}
+html .person1:hover .eyes .LE, body .person1:hover .eyes .LE {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  transition: 0.5s;
+}
+html .person1:active h4, body .person1:active h4 {
+  position: absolute;
+  left: 260px;
+  top: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+html .person2, body .person2 {
+  width: 250px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  position: absolute;
+  left: 400px;
+  top: 320px;
+  background-color: #d5896f;
+}
+html .person2 .hair, body .person2 .hair {
+  width: 150px;
+  height: 70px;
+  border-radius: 40px;
+  position: absolute;
+  left: 40;
+  top: -30px;
+  background-color: #70a288;
+}
+html .person2 .eyes, body .person2 .eyes {
+  position: absolute;
+  left: 40;
+  top: 30px;
+}
+html .person2 .eyes .RE, body .person2 .eyes .RE {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 130px;
+  top: 40px;
+  background-color: #7a542e;
+}
+html .person2 .eyes .LE, body .person2 .eyes .LE {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  background-color: #7a542e;
+}
+html .person2 .mouth, body .person2 .mouth {
+  width: 30px;
+  height: 20px;
+  border-radius: 15px;
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  background-color: #fcbfb7;
+}
+html .person2 h4, body .person2 h4 {
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  font-size: 28px;
+  opacity: 0;
+}
+html .person2:hover .hair, body .person2:hover .hair {
+  position: absolute;
+  left: 40;
+  top: -60px;
+  transition: 1s;
+}
+html .person2:hover .mouth, body .person2:hover .mouth {
+  width: 30px;
+  height: 45px;
+  border-radius: 15px;
+  transition: 1s;
+}
+html .person2:active h4, body .person2:active h4 {
+  position: absolute;
+  left: 260px;
+  top: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+html .person3, body .person3 {
+  width: 250px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  position: absolute;
+  left: 700px;
+  top: 100px;
+  background-color: #dab785;
+}
+html .person3 .hair, body .person3 .hair {
+  width: 150px;
+  height: 70px;
+  border-radius: 40px;
+  position: absolute;
+  left: 40;
+  top: -30px;
+  background-color: #eae8ff;
+}
+html .person3 .eyes, body .person3 .eyes {
+  position: absolute;
+  left: 40;
+  top: 30px;
+}
+html .person3 .eyes .RE, body .person3 .eyes .RE {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 130px;
+  top: 40px;
+  background-color: #7a542e;
+}
+html .person3 .eyes .LE, body .person3 .eyes .LE {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  background-color: #7a542e;
+}
+html .person3 .mouth, body .person3 .mouth {
+  width: 30px;
+  height: 20px;
+  border-radius: 15px;
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  background-color: #d5896f;
+}
+html .person3 h6, body .person3 h6 {
+  width: 40px;
+  height: 20px;
+  border-radius: 0;
+  position: absolute;
+  left: 200px;
+  top: -15px;
+  font-size: 26px;
+  opacity: 0;
+}
+html .person3 h4, body .person3 h4 {
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  font-size: 28px;
+  opacity: 0;
+}
+html .person3:hover h6, body .person3:hover h6 {
+  opacity: 1;
+  position: absolute;
+  left: 230px;
+  top: -60px;
+  transition: 2s;
+}
+html .person3:active h4, body .person3:active h4 {
+  position: absolute;
+  left: 260px;
+  top: 0px;
+  opacity: 1;
+  transition: 1s;
+}
