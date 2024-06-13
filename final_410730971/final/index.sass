@@ -1,0 +1,453 @@
+$color1: #1d3557
+$color2: #457b9d
+$color3: #a8dadc
+$color4: #f1faee
+$color5: #e63946
+$colorShadow: rgba(black,0.1)
+
+$shadowInset: inset -10px -10px 0px $colorShadow
+
+@mixin flexCenter
+  display: flex
+  justify-content: center
+  align-items: center
+  
+@mixin size($w,$h:$w)
+  width: $w
+  height: $h
+
+@mixin bdrsRect($w,$h,$bdrs:$h/2)
+  +size($w,$h)
+  border-radius: $bdrs
+
+@mixin abPos($l,$t)
+  position: absolute
+  left: $l
+  top: $t
+
+*
+    position: relative
+    
+
+html,body
+    +size(100%)
+    background-color: $color3
+
+.h5pDisplay
+    +flexCenter
+    +abPos(1100px,15px)
+
+.video
+    +flexCenter
+    +abPos(600px,30px)
+    
+.scene
+    position: relative
+    +flexCenter
+    .title
+        +abPos(60px,60px)
+        font-size: 50px
+        margin: 5
+        color: $color4
+        opacity: 1
+    .word
+        +abPos(950px,250px)
+        font-size: 30px
+        margin: 10
+        padding: 10px
+        color: $color2
+        border: solid 2px $color2
+        opacity: 0
+    .word2
+        +abPos(950px,330px)
+        font-size: 30px
+        margin: 10
+        padding: 10px
+        color: $color5
+        border: solid 2px $color5
+        opacity: 0
+    
+.cat
+    position: relative
+    +flexCenter
+    .head
+        
+        .face
+                +bdrsRect(290px,250px,110px)
+                +abPos(-145px,250px)
+                
+                background-color: $color4
+                box-shadow: $shadowInset
+                border: solid 3px $colorShadow
+        .eye
+            .eye1
+                +bdrsRect(20px,40px,10px)
+                +abPos(-55px,320px)
+        
+                background-color: $color5
+                border: solid 3px $colorShadow
+            .eye2
+                +bdrsRect(20px,40px,10px)
+                +abPos(45px,320px)
+        
+                background-color: $color5
+                border: solid 3px $colorShadow
+
+        .nose
+            +bdrsRect(15px,15px,7px)
+            +abPos(-5px,370px)
+        
+            background-color: $color2
+            border: solid 3px $colorShadow
+        .mouse
+            .mouse1
+                +bdrsRect(20px,20px,15px)
+                +abPos(-5px,410px)
+                
+                background-color: $color5
+                border: solid 3px $colorShadow
+                opacity: 1
+            .mouse2
+                +bdrsRect(40px,40px,30px)
+                +abPos(-15px,410px)
+                
+                background-color: $color5
+                border: solid 3px $colorShadow
+                opacity: 0
+        
+    .ear
+        .ear1
+            +bdrsRect(70px,70px,25px)
+            +abPos(-110px,210px)
+            
+            background-color: $color2
+            border: solid 3px $colorShadow
+        .ear2
+            +bdrsRect(70px,70px,25px)
+            +abPos(50px,210px)
+            
+            background-color: $color2
+            border: solid 3px $colorShadow
+
+    
+    .hand
+        .hand1
+            +bdrsRect(80px,80px,50px)
+            +abPos(-110px,530px)
+            
+            background-color: $color4
+            border: solid 3px $colorShadow
+            opacity: 0
+        .hand2
+            +bdrsRect(80px,80px,50px)
+            +abPos(50px,530px)
+            
+            background-color: $color4
+            border: solid 3px $colorShadow
+            opacity: 0
+
+.scene2
+    .word
+        +abPos(100px,300px)
+        font-size: 20px
+        margin: 10
+        padding: 10px
+        color: $color2
+        border: solid 2px $color2
+        opacity: 0
+    .word2
+        +abPos(100px,380px)
+        font-size: 20px
+        margin: 10
+        padding: 10px
+        color: $color5
+        border: solid 2px $color5
+        opacity: 0
+
+.cat2
+    position: relative
+    +flexCenter
+    .head
+        
+        .face
+                +bdrsRect(150px,130px,90px)
+                +abPos(-545px,300px)
+                
+                background-color: $color4
+                box-shadow: $shadowInset
+                border: solid 3px $colorShadow
+        .eye
+            .eye1
+                +bdrsRect(10px,20px,50px)
+                +abPos(-510px,330px)
+        
+                background-color: $color5
+                border: solid 3px $colorShadow
+            .eye2
+                +bdrsRect(10px,20px,50px)
+                +abPos(-450px,330px)
+        
+                background-color: $color5
+                border: solid 3px $colorShadow
+
+        .nose
+            +bdrsRect(8px,8px,5px)
+            +abPos(-480px,360px)
+        
+            background-color: $color2
+            border: solid 3px $colorShadow
+        .mouse
+            .mouse1
+                +bdrsRect(10px,10px,15px)
+                +abPos(-480px,380px)
+                
+                background-color: $color5
+                border: solid 3px $colorShadow
+                opacity: 1
+            .mouse2
+                +bdrsRect(30px,30px,20px)
+                +abPos(-490px,380px)
+                
+                background-color: $color5
+                border: solid 3px $colorShadow
+                opacity: 0
+        
+    .ear
+        .ear1
+            +bdrsRect(50px,50px,15px)
+            +abPos(-530px,270px)
+            
+            background-color: $color2
+            border: solid 3px $colorShadow
+        .ear2
+            +bdrsRect(50px,50px,15px)
+            +abPos(-450px,270px)
+            
+            background-color: $color2
+            border: solid 3px $colorShadow
+
+    
+    .hand
+        .hand1
+            +bdrsRect(40px,40px,20px)
+            +abPos(-530px,450px)
+            
+            background-color: $color4
+            border: solid 3px $colorShadow
+            opacity: 0
+        .hand2
+            +bdrsRect(40px,40px,20px)
+            +abPos(-450px,450px)
+            
+            background-color: $color4
+            border: solid 3px $colorShadow
+            opacity: 0
+
+.scene3
+    .word
+        +abPos(1350px,300px)
+        font-size: 20px
+        margin: 10
+        padding: 10px
+        color: $color2
+        border: solid 2px $color2
+        opacity: 0
+    .word2
+        +abPos(1350px,380px)
+        font-size: 20px
+        margin: 10
+        padding: 10px
+        color: $color5
+        border: solid 2px $color5
+        opacity: 0
+
+.cat3
+    position: relative
+    +flexCenter
+    .head
+        .face
+                +bdrsRect(150px,130px,90px)
+                +abPos(410px,300px)
+                
+                background-color: $color4
+                box-shadow: $shadowInset
+                border: solid 3px $colorShadow
+        .eye
+            .eye1
+                +bdrsRect(10px,20px,50px)
+                +abPos(510px,330px)
+        
+                background-color: $color5
+                border: solid 3px $colorShadow
+            .eye2
+                +bdrsRect(10px,20px,50px)
+                +abPos(450px,330px)
+        
+                background-color: $color5
+                border: solid 3px $colorShadow
+
+        .nose
+            +bdrsRect(8px,8px,5px)
+            +abPos(480px,360px)
+        
+            background-color: $color2
+            border: solid 3px $colorShadow
+        .mouse
+            .mouse1
+                +bdrsRect(10px,10px,15px)
+                +abPos(480px,380px)
+                
+                background-color: $color5
+                border: solid 3px $colorShadow
+                opacity: 1
+            .mouse2
+                +bdrsRect(30px,30px,20px)
+                +abPos(470px,380px)
+                
+                background-color: $color5
+                border: solid 3px $colorShadow
+                opacity: 0
+        
+    .ear
+        .ear1
+            +bdrsRect(50px,50px,15px)
+            +abPos(500px,270px)
+            
+            background-color: $color2
+            border: solid 3px $colorShadow
+        .ear2
+            +bdrsRect(50px,50px,15px)
+            +abPos(410px,270px)
+            
+            background-color: $color2
+            border: solid 3px $colorShadow
+
+    
+    .hand
+        .hand1
+            +bdrsRect(40px,40px,20px)
+            +abPos(500px,450px)
+            
+            background-color: $color4
+            border: solid 3px $colorShadow
+            opacity: 0
+        .hand2
+            +bdrsRect(40px,40px,20px)
+            +abPos(410px,450px)
+            
+            background-color: $color4
+            border: solid 3px $colorShadow
+            opacity: 0
+
+
+.scene
+  .title
+    transition: 0.3s
+
+.scene2
+  .title
+    transition: 0.3s
+
+.scene3
+  .title
+    transition: 0.3s
+
+
+.cat:active
+    .head
+        transform: translateY(-20px)
+    .ear
+        transform: translateY(-20px)
+
+.cat2:active
+    .head
+        transform: translateY(-20px)
+    .ear
+        transform: translateY(-20px)
+
+.cat3:active
+    .head
+        transform: translateY(-20px)
+    .ear
+        transform: translateY(-20px)
+
+
+.cat:hover
+    .head
+    .mouse
+        .mouse1
+            opacity: 0
+        .mouse2
+            opacity: 1   
+    .hand
+        .hand1
+            opacity: 1   
+        .hand2    
+            opacity: 1   
+
+.cat2:hover
+    .head
+    .mouse
+        .mouse1
+            opacity: 0
+        .mouse2
+            opacity: 1   
+    .hand
+        .hand1
+            opacity: 1   
+        .hand2    
+            opacity: 1
+
+.cat3:hover
+    .head
+    .mouse
+        .mouse1
+            opacity: 0
+        .mouse2
+            opacity: 1   
+    .hand
+        .hand1
+            opacity: 1   
+        .hand2    
+            opacity: 1
+
+
+.scene:hover
+    .word
+        opacity: 1
+
+.scene:active
+    .word2
+        opacity: 1
+
+.scene
+    .title 
+        transition: 0.3s
+    .cat
+        transition: 0.3s
+
+
+.scene2:hover
+    .word
+        opacity: 1
+
+.scene2:active
+    .word2
+        opacity: 1
+
+.scene2
+    .cat2
+        transition: 0.3s
+
+
+.scene3:hover
+    .word
+        opacity: 1
+
+.scene3:active
+    .word2
+        opacity: 1
+
+.scene3
+    .cat3
+        transition: 0.3s
